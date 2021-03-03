@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GROWTH PLUG</title>
+
+    <link href="https://colorlib.com/polygon/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://colorlib.com/polygon/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://colorlib.com/polygon/vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <link href="https://colorlib.com/polygon/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <link href="https://colorlib.com/polygon/build/css/custom.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a class="site_title"><i class="fa fa-paw"></i> <span>GROWTH PLUG</span></a>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="profile clearfix">
+                    <div style="width: 100%;" class="profile_info">
+                        <h5>Welcome, {{ user.first_name }}</h5>
+                    </div>
+                </div>
+
+                <br />
+
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>General</h3>
+                        <ul class="nav side-menu">
+                            <li><a><i class="fa fa-home"></i> Dashboard</a>
+                            </li>
+                            <li><a><i class="fa fa-edit"></i> Website</a>
+                            </li>
+                            <li><a><i class="fa fa-desktop"></i> Visitors</a>
+                            </li>
+                            <li><a><i class="fa fa-table"></i> Reviews</a>
+                            </li>
+                            <li><a><i class="fa fa-bar-chart-o"></i> Listing</a>
+                            </li>
+                            <li><a><i class="fa fa-clone"></i>Settings</a>
+                            </li>
+                        </ul>
+                        <div style="padding: 0" class="sidebar-footer hidden-small">
+                            <a style="width: 100%" data-toggle="tooltip" data-placement="top" title="Logout" href="https://mechby.com/api/login">
+                                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_col" role="main">
+            <div class="">
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Listings</h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Settings 1</a>
+                                            <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <table class="table table-striped projects">
+                                    <thead>
+                                    <tr>
+                                        <th style="width: 1%">#</th>
+                                        <th style="width: 20%">Source</th>
+                                        <th>Name</th>
+                                        <th>Address</th>
+                                        <th>Status</th>
+                                        <th style="width: 20%">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a>Google</a>
+                                        </td>
+                                        <td>
+                                            <a>ABC Dental</a>
+                                        </td>
+                                        <td class="project_progress">
+                                            <a>2101 California St.</a>
+                                        </td>
+                                        <td>
+                                            <a>Active</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-secondary btn-xs"><i class="fa fa-folder"></i> Fetch Details </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a>Yahoo!</a>
+                                        </td>
+                                        <td>
+                                            <a>ABC Dental</a>
+                                        </td>
+                                        <td class="project_progress">
+                                            <a>2101 California St.</a>
+                                        </td>
+                                        <td>
+                                            <a>Inactive</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-secondary btn-xs"><i class="fa fa-folder"></i> Fetch Details </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a>Facebook</a>
+                                        </td>
+                                        <td>
+                                            <a>ABC Dental</a>
+                                        </td>
+                                        <td class="project_progress">
+                                            <a>2101 California St.</a>
+                                        </td>
+                                        <td>
+                                            <a>Active</a>
+                                        </td>
+                                        <td>
+                                            <a id="page-fetch" href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Fetch Details </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <br><br>
+                                    <h4>Page Name: <span id="page-name"></span></h4>
+                                    <input style="width: 100%; height: 50px; margin-bottom: 10px;" id="about-page" name="about-page" type="text" placeholder="About page">
+                                    <a style="width: 10%; float: right;" id="about-page-update" href="javascript:void(0);" class="btn btn-success btn-block" role="button">SUBMIT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="clearfix"></div>
+        </footer>
+
+    </div>
+</div>
+
+<script src="https://colorlib.com/polygon/vendors/jquery/dist/jquery.min.js"></script>
+
+<script src="https://colorlib.com/polygon/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://colorlib.com/polygon/vendors/fastclick/lib/fastclick.js"></script>
+
+<script src="https://colorlib.com/polygon/vendors/nprogress/nprogress.js"></script>
+
+<script src="https://colorlib.com/polygon/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+<script src="https://colorlib.com/polygon/build/js/custom.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+
+    $("#page-fetch").on('click', function(){
+        $.ajax({
+            type: "GET",
+            url: "https://mechby.com/api/about-page/",
+            beforeSend:function(xhr){
+                setCustomRequestHeader(xhr)
+            },
+            success: function (data) {
+                $("#page-name").text(data.message[0].name);
+                $("#about-page").val(data.message[0].about);
+            }
+        });
+    });
+
+    $("#about-page-update").on('click', function(){
+        let about = $("#about-page").val();
+        $.ajax({
+            type: "POST",
+            url: "https://mechby.com/api/update-page/",
+            data: JSON.stringify({'about': about}),
+            dataType : 'json',
+            beforeSend:function(xhr){
+                setCustomRequestHeader(xhr)
+            },
+            success: function (data) {
+                if (data.message.status="success") {
+                    toastr["success"]('About page updated successfully');
+                }
+            }
+        });
+    });
+
+    function setCustomRequestHeader(xhr){
+        if (getCookie('Authorization')) {
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.setRequestHeader("Authorization", getCookie('Authorization'));
+        }
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+</script>
+</body>
+</html>

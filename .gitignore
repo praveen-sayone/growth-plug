@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+~*
+*~
+.DS_Store
+media
+staticfiles
+.idea/
+envs/
